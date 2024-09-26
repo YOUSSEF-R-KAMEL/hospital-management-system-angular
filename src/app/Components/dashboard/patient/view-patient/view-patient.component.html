@@ -1,0 +1,17 @@
+<h2>Patient Information</h2>
+
+<mat-card class="example-card">
+  <mat-card-header>
+    <mat-card-title>{{currentPatient?.patient_name}}</mat-card-title>
+  </mat-card-header>
+
+  <mat-divider></mat-divider>
+
+  <mat-card-content>
+      <span> Doctor Name : </span> {{currentPatient?.doctor_name}} <br>
+      <span> Mobile : </span> {{currentPatient?.mobile}} <br>
+      <span> Prescription : </span> {{currentPatient?.prescription}} <br>
+      <span> Gender : </span> {{currentPatient?.gender}} <br>
+      <span> Adminssion Date : </span> {{currentPatient?.admission_date | date}}
+    </mat-card-content>
+</mat-card>

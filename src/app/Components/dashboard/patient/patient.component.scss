@@ -1,0 +1,29 @@
+mat-card {
+  cursor: pointer;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+
+mat-card:hover {
+  transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  -o-transform: scale(1.05);
+}
+
+.add-doc {
+  color: #3f51b5;
+}
+
+.add-doc span {
+  font-weight: bold;
+  font-size: 23px;
+}
+
+mat-form-field {
+  margin-top: 35px;
+}

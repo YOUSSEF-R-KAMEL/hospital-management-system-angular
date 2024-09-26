@@ -1,0 +1,35 @@
+
+<div class="container">
+
+  <mat-card>
+    <mat-card-title class="text-center d-block m-3 fs-3 mb-5">Login</mat-card-title>
+    <mat-card-content>
+      <p style="color: #777;">for example [email: admin&#64;gmail.com, passowrd: 123456]</p>
+      <form class="example-form" [formGroup]="form">
+        <mat-form-field>
+          <mat-label>Email</mat-label>
+          <input matInput
+                  placeholder="pat@example.com"
+                  formControlName="email"
+                  required>
+          <mat-error *ngIf="form.get('email')?.invalid || form.get('email')?.dirty || form.get('email')?.touched">Enter valid email address </mat-error>
+        </mat-form-field>
+
+        <br>
+        <mat-form-field>
+          <mat-label>Password</mat-label>
+          <input type="email" matInput formControlName="password"
+                  placeholder="Ex. by1515sdd">
+          <mat-error *ngIf="form.get('password')?.invalid || form.get('password')?.dirty || form.get('password')?.touched">
+            Please enter a valid password
+          </mat-error>
+        </mat-form-field>
+
+        <button mat-raised-button color="primary" (click)="login()" [disabled]="form.invalid">Login</button>
+
+      </form>
+    </mat-card-content>
+
+  </mat-card>
+
+</div>

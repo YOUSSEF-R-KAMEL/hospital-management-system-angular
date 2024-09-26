@@ -1,0 +1,9 @@
+{
+  "projects": {
+    "default": "hospital-management-b4b54",
+    "hospital-management-b4b54": "hospital-management-b4b54"
+  },
+  "targets": {},
+  "etags": {},
+  "dataconnectEmulatorConfig": {}
+}
